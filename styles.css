@@ -194,7 +194,7 @@ h2 {
  
 }
 }
-#order-btn{
+/* #order-btn{
   margin-left: 2.1rem;
   padding: 10px 20px;
   border-radius: 50px;
@@ -204,7 +204,7 @@ h2 {
   font-size: 18px;
   transition: all 0.3s ease;
   cursor: pointer;
-  }
+  } */
 #order-btn:hover{
   /* transform: translate(20px,10px); */
   transform: skewY(180deg);
@@ -347,7 +347,18 @@ h2 {
 }
 @media (max-width: 767px) {
   /* Hide navigation menu by default */
-  
+  #order-btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 2rem;
+    
+  }
   header h1{
 padding: 1rem;
 margin: 10px;
@@ -393,6 +404,7 @@ position: relative;
     display: none;
 
   }
+  
   .show{
     display: flex;
     flex-direction: column;
