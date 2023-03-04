@@ -1,0 +1,320 @@
+/* General styles */
+@keyframes example {
+  0%   {background-color:rgb(255, 255, 0); left:-200px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+/* html {
+  scroll-behavior: smooth;
+} */
+
+header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 35px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4c430;
+}
+
+section {
+  margin-top: 100px;
+  padding: 50px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Home section styles */
+
+.home-background {
+  /* background-image: url('https://c0.wallpaperflare.com/preview/839/412/980/food-and-drink-pizza-pizzas-tomato.jpg'); */
+  /* (""); */
+  background-image: url("http://surl.li/fezqs");
+
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-background h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+  color: #000000;
+}
+
+.home-background p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #000;
+  color: rgb(255, 0, 0);
+}
+
+.home-background button {
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  font-size: 24px;
+  
+ 
+  cursor: pointer;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+.home-background button:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+  transition: 1s;
+
+}
+
+/* Menu section styles */
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.menu-item:hover{
+  /* transform: translate(20px,10px); */
+  transform: scale(1.1,1.1);
+  transition: 1s;
+  background-color: #f4c430;
+  
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.menu-item .price {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.menu-item button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f4c430;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#order-btn{
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-left: 36rem;
+}
+#order-btn:hover{
+  /* transform: translate(20px,10px); */
+  transform: skewY(180deg);
+  transition: 1s;
+ 
+  
+}
+.cart li{
+  margin-left: 32.5rem;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+  background-color:#f4c430;
+  list-style: none;
+  border-radius: 5px;
+  padding: 4px;
+  width: 250px;
+ 
+}
+.menu-item button:hover {
+  background-color: #fff;
+  color: #f4c430;
+  transition: 0.7s;
+}
+
+/* About section styles */
+
+/* About Section */
+.about {
+  background-color: #f9f9f9;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.about img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f9f9f9;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+/* Message Styles */
+.message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
